@@ -8,7 +8,7 @@ local opts = {
 		"lua_ls",
 		"emmet_ls",
 		"jsonls",
-		"r"
+		"r",
 	},
 
 	automatic_installation = true,
