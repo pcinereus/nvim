@@ -35,6 +35,18 @@ local config = function()
 		},
 	})
 
+  lspconfig.r_language_server.setup {
+    -- on_attach = on_attach,
+    -- capabilities = capabilities,
+    -- flags = lsp_flags,
+    settings = {
+      r = {
+        lsp = {
+          rich_documentation = false
+        },
+      },
+    },
+  }
   local luacheck = require("efmls-configs.linters.luacheck")
   local stylua = require("efmls-configs.formatters.stylua")
 
