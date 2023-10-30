@@ -59,3 +59,7 @@ imap(".", ".<c-g>u")
 imap(";", ";<c-g>u")
 
 nmap('Q', '<Nop>')
+
+-- keep selection after indent/dedent
+vmap('>', '>gv')
+vmap('<', '<gv')
